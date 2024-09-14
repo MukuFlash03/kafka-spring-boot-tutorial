@@ -1,6 +1,6 @@
 Simple Spring Boot + Apache Kafka RESTful web application ([tutorial](https://www.youtube.com/watch?v=SqVfCyfCJqw))
 
-Follow these steps to build and run the application:
+### Steps to build and run the application:
 
 ```
 $ docker-compose up --build
@@ -21,7 +21,6 @@ $ cd /opt/kafka_2.13-3.8.0 && bin/zookeeper-server-start.sh config/zookeeper.pro
 $ cd /opt/kafka_2.13-3.8.0 && bin/kafka-server-start.sh config/server.properties
 
 Read messages from the Kafka topic:
-```
 $ cd /opt/kafka_2.13-3.8.0 && bin/kafka-console-consumer.sh --topic MukuFlash --from-beginning --bootstrap-server localhost:9092
 ```
 
@@ -33,4 +32,6 @@ Use this to re-run the application everytime you make a change to the code:
 ```
 $ mvn spring-boot:run
 ```
+
+### Screenshots
 
